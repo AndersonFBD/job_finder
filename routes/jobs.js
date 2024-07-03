@@ -18,7 +18,8 @@ router.post('/add', (req, res) => {
         salary, 
         company, 
         email, 
-        new_job})
+        new_job
+    })
         .then(()=> res.redirect('/'))
         .catch(err => console.log(err))
 });
